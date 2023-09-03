@@ -72,7 +72,7 @@ const HelpAndSupport = ({visible, setVisible}) => {
                 <p className={cl.title}>Help and Support</p>
             <div className={cl.support}>
                 <h3>FAQ</h3>
-                <p onClick={() => setAboutFlexxi(true)}>About FLEXXI <FaChevronRight className={cl.icon} /></p>
+                <p onClick={() => setAboutFlexxi(true)}>About Nurse app <FaChevronRight className={cl.icon} /></p>
                 <p onClick={() => setAboutNurses(true)}>About Nurses / Caregivers <FaChevronRight className={cl.icon}/></p>
                 <p onClick={() => setAboutQuestions(true)}>Other Questions <FaChevronRight className={cl.icon}/></p>
             </div>
