@@ -1,0 +1,52 @@
+.avatarGroup {
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    height: 60px;
+    background-color: transparent;
+}
+
+.avatarGroup h4 {
+    color: var(--n-9, #17151C);
+    font-family: Aeonik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.nameJoin {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+}
+
+.avatarGroup p {
+    color: var(--n-5, #A29DB0);
+    font-family: Aeonik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.line {
+    width: 2px;
+    height: 65px;
+    background-color: #F6F0FF;
+}
+
+.iconCont {
+    background-color: #F6F0FF;
+    padding: 0 8px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+
+}
+
+.icon {
+    font-size: 30px;
+}

@@ -1,0 +1,50 @@
+.inputContaner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    flex-direction: column;
+    
+}
+
+.inputSection {
+    display: flex;
+    align-items: center;
+}
+
+.myInput {
+    padding: 11px 10px;
+    border-radius: 0 9px 9px 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 41px;
+}
+
+.mySelect {
+    border-radius: 9px 0 0 9px;
+    width: 47px;
+    height: 41px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    width: 300px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #7956D8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button:hover {
+    background-color: #694cba;
+}

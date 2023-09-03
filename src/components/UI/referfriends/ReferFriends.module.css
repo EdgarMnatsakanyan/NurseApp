@@ -1,0 +1,177 @@
+.allContainer {
+    position: absolute;
+    top: 0;
+    left: 360px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 1100px;
+    min-height: 320px;
+    padding: 15px;
+}
+
+.referSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titleSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoRefer {
+    color: #17151C;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.referAbout {
+    color: #A29DB0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/* ----------------------------- */
+
+.contentSecion {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+    gap: 25px;
+}
+
+.largeContainer {
+    display: flex;
+    width: 300px;
+    height: 90px;
+    justify-content: space-evenly;
+    align-items: stretch;
+    border-radius: 9px;
+    background: #FFF;
+    box-shadow: 0px 2px 19px 0px rgba(0, 0, 0, 0.10);
+}
+
+.sections {
+    text-align: center;
+    margin: 5px;
+}
+
+.saleMoney {
+    color: #7956D8;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.about {
+    color: #4C4A4F;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.discount {
+    color: #A29DB0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.pracnetDiscount {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -13px;
+    justify-content: center;
+    gap: 5px;
+    color: #7956D8;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.discountInfo {
+    position: relative;
+    top: -25px;
+    color: #4C4A4F;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.timeOut {
+    color: #7956D8;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.timeInfo {
+    color: #4C4A4F;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+/* -------BUTTON-------- */
+
+.btnSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btnSection p {
+    color: #7956D8;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.btnSection button {
+    color: #FFF;
+    background-color: #7956D8;
+    width: 173px;
+    height: 42px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}

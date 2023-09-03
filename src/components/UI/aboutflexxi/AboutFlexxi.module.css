@@ -1,0 +1,64 @@
+.containerAboutFlexxi {
+    position: absolute;
+    top: 0;
+    left: 360px;
+    width: 1100px;
+    height: 440px;
+    overflow: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.titleBack {
+    cursor: pointer;
+    color: #7956D8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconBack {
+    position: relative;
+    top: -0.1px;
+}
+
+.containerAbout {
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #F4F3F7;
+    padding: 13px;
+    margin-bottom: 10px;
+}
+
+.containerAbout h4 {
+    color: #17151C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.iconDropDown {
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    top: 6px;
+    color: #7956D8;
+}
+
+.dropDownSection p {
+    position: relative;
+    top: 10px;
+    color: #A29DB0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}

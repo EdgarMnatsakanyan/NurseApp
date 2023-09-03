@@ -1,0 +1,112 @@
+.countryContainer {
+    position: fixed;
+    top: -90px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h2 {
+    color: var(--n-9, #17151C);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.title button {
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.countryContainer.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.countrySection {
+    background-color: #fff;
+    width: 550px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+.countryInputContiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.index {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+}
+
+.street {
+    width: 210px;
+}
+
+.zip {
+    width: 100px;
+}
+
+.countryInput {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    border-radius: 10px;
+    bottom: 10px;
+}
+
+.inputSection {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 2px;
+}
+
+.btnSave {
+    margin-top: 5px;
+    background-color: #7956D8;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    width: 332px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.countryInput h4 {
+    display: flex;
+    align-items: center;
+    width: 290px;
+    margin-bottom: 2px;
+    justify-content: space-between;
+    padding: 8px 10px 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.countryInput h4:hover {
+    background-color: #F4F3F7;
+}

@@ -1,0 +1,71 @@
+.seeFriendsContianer {
+    display: flex;
+    padding: 0 15px;
+    flex-direction: column;
+}
+
+.title p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #7956D8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.sectionSeeFriends {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.sectionContent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 284px;
+}
+
+.ContentTitle p {
+    position: relative;
+    top: 5px;
+}
+
+.ContentTitle span {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -5px;
+}
+
+.active {
+    color: #23C983;
+}
+
+.reagister {
+    color: #7956D8;
+}
+
+.btnSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.btnFriends {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    width: 173px;
+    height: 42px;
+    background-color: #7956D8;
+    color: #fff;
+    cursor: pointer;
+} 

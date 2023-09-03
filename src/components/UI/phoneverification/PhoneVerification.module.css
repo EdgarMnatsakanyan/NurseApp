@@ -1,0 +1,130 @@
+.phoneVerification {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phoneContainer {
+    position: relative;
+    top: 120px;
+    left: 500px;
+    width: 600px;
+    height: 480px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.phoneTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phoneTitle h2 {
+    color: var(--n-9, #17151C);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.phoneSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phoneSection p {
+    color: var(--n-5, #A29DB0);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.phoneInput {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.VeraficInput {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.message {
+    position: relative;
+    top: -25px;
+    left: -9px;
+}
+
+.phoneBtn {
+    cursor: pointer;
+    width: 280px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    background-color: #7956D8;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 0;
+}
+
+.timer {
+    color: #7956D8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;;
+}
+
+.titleTimer {
+    color: #A29DB0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.timerBtn {
+    color: var(--main-lilac-violet, #7956D8);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.phoneImg {
+    margin: 15px 0;
+}

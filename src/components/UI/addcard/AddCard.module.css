@@ -1,0 +1,83 @@
+.addCardContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showCardSection {
+    background-color: #fff;
+    width: 600px;
+    min-height: 360px;
+    padding: 10px 25px 25px 25px;
+    border-radius: 10px;
+}
+
+.titleSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleSection h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.icons {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.showBanksection {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addCardInput {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.inputIcon {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    color: #7956D8;
+    font-size: 20px;
+}
+
+.secureTitle {
+    background-color: #F4F3F7;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+.iconSecure {
+    color: #23C983;
+    font-size: 24px;
+}

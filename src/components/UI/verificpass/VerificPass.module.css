@@ -1,0 +1,24 @@
+.veraficContainer {
+    max-width: 265px;
+    display: flex;
+    gap: 20px;
+}
+
+.VeraficInput {
+        width: 50px;
+        height: 48px;
+        margin: 17px;
+        border-radius: 5px;
+        border: 1px solid var(--n-3, #DAD6E5);
+        background: var(--n-0, #FFF);
+        font-size: 25px;
+
+}
+
+.verificSection {
+    background-color: #fff;
+    width: 600px;
+    min-height: 322px;
+    padding: 25px;
+    border-radius: 10px;
+}

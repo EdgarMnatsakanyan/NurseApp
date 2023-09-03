@@ -1,0 +1,127 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 360px;
+    display: flex;
+    width: 1100px;
+    min-height: 100px;
+    border-radius: 10px;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.accoutn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 15px;
+}
+
+.img {
+    background-image: url(./person.png);
+    background-size: cover;
+    border: none;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+
+.liner {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.personalSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.content {
+    position: relative;
+    border: 1px solid #F6F0FF;
+    display: flex;
+    align-items: center;
+    margin: 20px 15px 20px 8px;
+    padding: 5px;
+    border-radius: 8px;
+    width: 320px;
+    gap: 10px;
+}
+
+.content p {
+    color: var(--n-5, #A29DB0);
+    font-family: Aeonik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; 
+}
+
+.contentAll {
+    z-index: 1;
+}
+
+.content h4 {
+    color: var(--n-9, #17151C);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.icon {
+    display: flex;
+    background-color: #f6f0ff;
+    color: #7956D8;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.sectionContainers {
+    padding: 20px;
+}
+
+.section {
+    padding: 20px 15px;
+}
+
+.changeBtn {
+    cursor: pointer;
+    padding: 20px 30px;
+    background-color: #7956D8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+.editor {
+    cursor: pointer;
+}
+
+.section a {
+    text-decoration: none;
+    color: var(--main-lilac-violet, #7956D8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.editpen {
+    position: absolute;
+    right: 5px;
+    top: 12px;
+}
+
+.contentAbout h4 {
+    position: relative;
+    top: -7px;
+}

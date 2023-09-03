@@ -1,0 +1,196 @@
+{
+    "imgtitle": {
+        "h1": "I need a nurse",
+        "h4": "Flexxi offers a flexible solution for applying for respite care services at home."
+    },
+    "signupor": {
+        "signup": "Sign in or Sign up",
+        "type": "Type your phone number",
+        "btnone": "Continue",
+        "btntwo": "Login with email"
+    },
+
+    "verification": {
+        "signin": "Sign in",
+        "insertcode": "Insert the code that we have sent you",
+        "btnthree": "Login"
+    },
+
+    "loginwithemail": {
+        "email": "Sign in with email",
+        "type": "type your credentials",
+        "btnone": "Continue",
+        "forgetpass": "Forget your Password?"
+    },
+
+    "createanaccoutn": {
+        "h2": "Create an account",
+        "p": "Some more info about you",
+        "btnfour": "Sign up",
+        "info": "Whelcome!"
+    },
+
+    "forgotpassword": {
+        "h2": "Forgot password ?",
+        "p": "Give us your email",
+        "a": "Login with email",
+        "btnfive": "Reset password"
+    },
+
+    "insercode": {
+        "h2": "We have sent you an email",
+        "p": "Insert the code here",
+        "btnsix": "Reset password",
+        "a": "Resend code"
+    },
+
+    "createnewpassword": {
+        "h2": "Create new password",
+        "p": "Set up new password",
+        "btnseven": "Reset password"
+    },
+
+    "myProfile": {
+        "navMenu": {
+            "myprofile": "My profile",
+            "paymentmethod": "Payment method",
+            "referfriends": "Refer friends",
+            "settings": "Settings",
+            "helpandsupport": "Help and support",
+            "logout": "Log out",
+            "day": "Joined Jul 25"
+        },
+
+        "header": {
+            "personaldata": "Personal data",
+            "paymentmethod": "Payment method",
+            "referfriends": "Refer friends",
+            "settings": "Settings",
+            "helpandsupport": "Help and support"
+        },
+
+        "personalData": {
+            "day": "Joined Jul 25",
+            "button": "Change",
+            "personal": "Personal Data",
+            "name": "Full name/Company name",
+            "address": "Address",
+            "phone": "Phone",
+            "email": "Email",
+            "language": "Language",
+            "enRu": "English, Russian"
+        }
+    },
+
+    "modalWindow": {
+        "editnmae": {
+            "name": "Edit name",
+            "button": "Save"
+        },
+
+        "country": {
+            "address": "Email address",
+            "btn": "Save"
+        },
+
+        "emailaddress": {
+            "editemail": "Edit email",
+            "button": "Save",
+            "verifiemail": "Verify email"
+        },
+
+        "verificemail": {
+            "wehave": "We have sent you an email",
+            "placeverifi": "Enter the code here",
+            "button": "Confirm",
+            "resend": "Resend code"
+        },
+
+        "phoneverific": {
+            "anemail": "We have sent you an email",
+            "thecode":"Enter the code here",
+            "button": "Confirm",
+            "timer": "Code will be available from",
+            "resendcode":"Resend code"
+        },
+
+        "editlanguage": {
+            "language": "Edit language",
+            "buttonone": "+ Add language",
+            "buttontwo": "Confirm",
+            "changelng": "You can change your app language from the setting"
+        }
+    },
+
+    "payment": {
+            "title": "My Cards",
+            "titletwo": "My Accounts",
+            "titlethree": "My Cards",
+            "h4": "There is no payment method",
+            "h6": "Please add your payment method",
+            "button": "Add new Card",
+            "buttonone": "Add new card",
+            "buttonthree": "Add bank account"
+        },
+
+        "visacard": {
+            "title": "Make default card",
+            "titletwo": "Delete card"
+        },
+
+        "bankvisa": {
+            "title": "Make default card",
+            "titletwo": "Delete card"
+        },
+
+        "addcard": {
+            "titleh2": "Add new card",
+            "titlepayment": "Your Payment info will be secure",
+            "titlepost": "Save"
+        },
+
+        "addbank": {
+            "titleh2": "Add new bank account",
+            "titlepayment": "Your payment info will be secure",
+            "titlepost": "Save"
+        },
+
+        "referfriend": {
+            "titleone": "Refer a friend and get the bonus",
+            "titletwo": "Share your invite code and when they spend 30€ with their card, you get 30€ from us",
+            "content": {
+                "pOne": "Earned",
+                "pTwo": "Pending",
+                "pThree": "Highest discount",
+                "pFour":  "See your friends",
+                "button": "Invite a Friend"
+            }
+        },
+
+        "seefriend": {
+            "titleback": "Friends List",
+            "qualified": "Qualified",
+            "registered": "Registered",
+            "button": "Invite a Friend"
+        },
+
+        "invitefriend": {
+            "titleback": "Friends List",
+            "titleone": "There is no invited friends. Invite friend to get discount.",
+            "titletwo": "Share your invite code and when they spend 30€ with their card, you get 30€ from us",
+            "button": "Invite a Friend"
+        },
+        
+        "setting": {
+            "namepage": "Settings",
+            "buttonchange": "Change password",
+            "errormessage": "Please try again !!",
+            "buttondeactive": "Deactivate account",
+            "deactivateAccount": {
+                "h3": "Account deactivation",
+                "titledeactivate": "Are you sure you want to deactivate your account?",
+                "buttonOne": "Cancel",
+                "buttonTwo": "Deactivate"
+            }
+        }
+    }

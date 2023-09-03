@@ -1,0 +1,92 @@
+.contactUsContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.contactUsContainer.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactContainer {
+    width: 600px;
+    min-height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.exitTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--n-9, #17151C);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; 
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.phoneSelctor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myInput {
+    position: relative;
+    top: 0;
+    margin: 15px 0;
+    width: 270px;
+    height: 45.5px;
+    border: 1px solid #DAD6E5;
+    border-radius: 0 5px 5px 0;
+}
+
+.mySelect {
+    width: 60px;
+    height: 46px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #DAD6E5;
+}
+
+.inputs {
+    border-radius: 5px;
+    border: 1px solid #DAD6E5;
+}
+
+.btnContact {
+    background-color: #7956D8;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    width: 328px;
+    height: 56px;
+}
+
+.containerInputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.inputMassage {
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    border: 1px solid #DAD6E5;
+}

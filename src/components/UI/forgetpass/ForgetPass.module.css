@@ -1,0 +1,23 @@
+.forgetContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid var(--n-3, #DAD6E5);
+    background: var(--n-0, #FFF);
+}
+
+.forgetBtn {
+    margin-top: 10px;
+    width: 330px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #7956D8;
+    color: #fff;
+}
+

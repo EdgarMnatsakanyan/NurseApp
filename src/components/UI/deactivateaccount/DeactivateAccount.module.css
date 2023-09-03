@@ -1,0 +1,92 @@
+.deactivateAccount {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.deactivateAccount.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deactivateContainer {
+    background-color: #fff;
+    width: 600px;
+    min-height: 220px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.title h3 {
+    color:#17151C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.crossIcon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.sectionDeactivate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.errorIcon {
+    font-size: 48px;
+    color: #F14055;
+    margin: 15px 0;
+}
+
+.titleDeactivate {
+    color: var(--n-6, #59565C);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.btnSection {
+    display: flex;
+    gap: 24px;
+    margin: 20px 0;
+}
+
+.btnOne {
+    cursor: pointer;
+    width: 173px;
+    height: 42px;
+    border: none;
+    border-radius: 8px;
+    color: #F6F0FF;
+    background-color: #7956D8;
+}
+
+.btnDeactivate {
+    border: 1px solid #F14055;
+    color: #F14055;
+    background-color: transparent;
+    cursor: pointer;
+    width: 173px;
+    height: 42px;
+    border-radius: 8px;
+}

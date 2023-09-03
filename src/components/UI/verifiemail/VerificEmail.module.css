@@ -1,0 +1,90 @@
+.verificEmail {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.verificEmail.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verificTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.verificTitle h2 {
+    color: var(--n-9, #17151C);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.verificSection {
+    position: relative;
+    top: 140px;
+    left: 470px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 600px;
+    height: 450px;
+}
+
+.icon {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.verificInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.verificSection hr {
+    position: relative;
+}
+
+.verificInput p {
+    color: var(--n-5, #A29DB0);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.inputs {
+    display: flex;
+    gap: 25px;
+}
+
+.inputs input {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.verificBtn {
+    margin: 15px 0;
+    width: 270px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: #7956D8;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}

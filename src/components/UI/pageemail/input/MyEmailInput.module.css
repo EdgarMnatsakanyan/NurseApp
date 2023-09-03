@@ -1,0 +1,33 @@
+.emailInput {
+    width: 350px;
+    height: 48px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+.passInput {
+    width: 350px;
+    height: 48px;
+    padding-left: 15px;
+}
+
+.emailBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left: 330px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.emailSection {
+    margin: 1px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.allSection {
+    display: flex;
+    flex-direction: column;
+}

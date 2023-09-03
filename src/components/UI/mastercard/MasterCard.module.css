@@ -1,0 +1,98 @@
+.cardOne {
+    position: absolute;
+    padding: 3px 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px 4px rgba(0, 0, 0, 0.15);
+    top: 75px;
+    right: -25px;
+    width: 153px;
+    height: 90px;
+}
+
+.cardOne p {
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 5px;
+}
+
+.cardOne p:hover {
+    background-color: #F6F0FF;
+    border-radius: 20px;
+}
+
+.visaSection {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 290px;
+    height: 70px;
+    padding: 10px 16px;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px solid #DAD6E5;
+    border-radius: 10px;
+}
+
+.visaCard {
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    gap: 15px;
+    align-self: stretch;
+}
+
+.visaIn {
+    padding-right: 64px;
+}
+
+.visaIn p span {
+    padding-left: 15px;
+}
+
+.visaIn p {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 5px;
+}
+
+.visaOne {
+    padding-right: 65px;
+}
+
+.visaOne p {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 5px;
+}
+
+.icon {
+    font-size: 20px;
+    color: #172B85;
+}
+
+.background {
+    background-color: #F6F0FF;
+    width: 35px;
+    height: 37px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visa {
+    position: relative;
+    top: 8px;
+}
+
+.dot {
+    cursor: pointer;
+    font-size: 20px;
+}

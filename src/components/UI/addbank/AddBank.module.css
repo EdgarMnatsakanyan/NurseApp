@@ -1,0 +1,85 @@
+.addbankContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addBankSection {
+    width: 600px;
+    min-height: 320px;
+    background-color: #fff;
+    padding: 10px 25px 25px 25px;
+    border-radius: 10px;
+}
+
+.titleSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleSection h2 {
+    color: var(--n-9, #17151C);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.Icon {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.inputSection {
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputSection input {
+    margin: 7px 0;
+}
+
+.inputBtn {
+    width: 330px;
+    height: 42px;
+    background-color: #7956D8;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.secureTitle {
+    background-color: #F4F3F7;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+.iconSecure {
+    color: #23C983;
+    font-size: 24px;
+}

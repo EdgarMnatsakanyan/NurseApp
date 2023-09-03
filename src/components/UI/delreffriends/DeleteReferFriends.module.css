@@ -1,0 +1,108 @@
+.deleteSection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.deleteSection.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteContainer {
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.titleDelete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleDelete {
+    color: #17151C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; 
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.containerDeleting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 24px 0;
+}
+
+.containerDeleting h4 {
+    color: #3A3542;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin: 7px 0;
+}
+
+.containerDeleting p {
+    color: #59565C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 7px 0;
+}
+
+.btnSection {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0 0 0;
+}
+
+.btnCancel {
+    background-color: transparent;
+    border: 1px solid #7956D8;
+    color: #7956D8;
+    border-radius: 8px;
+    width: 173px;
+    height: 42px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.btnDelete {
+    background-color: transparent;
+    border: 1px solid #7956D8;
+    color: #7956D8;
+    border-radius: 8px;
+    width: 173px;
+    height: 42px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
