@@ -10,7 +10,7 @@ const Profile = () =>  {
         <div className='navigation-container'>
             <nav className='navigation'>
                 <div>
-                  <h2>Nurse app</h2>
+                  <h2 classname="nurse_title">Nurse app</h2>
                 </div>
                 <ul className='list-ul'>
                   <li>Job offers</li>
