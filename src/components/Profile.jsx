@@ -12,14 +12,9 @@ const Profile = () =>  {
                 <div>
                   <h2 classname="nurse_title">Nurse app</h2>
                 </div>
-                <ul className='list-ul'>
-                  <li>Job offers</li>
-                  <li>Orders</li>
-                </ul>
                 <div className='profile-group'>
                   <MyAvatar />
                 </div>
-                <h1 className='line-profiletwo'></h1>
             </nav>
             <div className='background'></div>
             <NavBarSection />
