@@ -6,29 +6,28 @@ import { useNavigate } from 'react-router-dom';
 
 const ForgetPass = () => {
     const navigate = useNavigate()
-    const handleContinue = () => {
-        navigate('/verificationpassword')
-    }
     const { t } = useTranslation();
     const [email, setEmail] = useState('')
     const [errors, setErrrors] = useState('')
+    
+    const handleContinue = () => {
+        navigate('/verificationpassword')
+    }
+
     const handleEmailChange = (event) =>{
         setEmail(event.target.value);
-      }
-      const handleSubmit = (event) => {
+    }
+
+    const handleSubmit = (event) => {
         event.preventDefault();
     
         const errors = {};
         if(!email) {
-        errors.email = 'Email is required';
+            errors.email = 'Email is required';
+        } else {
+            setErrrors(errors);
         }
-    
-        setErrrors(errors);
-    
-        if(Object.keys(errors).length === 0){
-          
-        }
-      };
+    };
     return (
         <div>
             <form >

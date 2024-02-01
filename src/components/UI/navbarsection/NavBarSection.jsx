@@ -30,7 +30,7 @@ const NavBarSection = () => {
                     onClick={() => toggleTab(1)}
                 >
                     <div className={cl.icons}>
-                    <Personal />
+                        <Personal />
                     </div>
                     <h4>{t("myProfile.header.personaldata")}</h4>
                 </div>

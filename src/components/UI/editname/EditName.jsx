@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import cl from './EditName.module.css'
 import { RxCross2 } from 'react-icons/rx'
 import { useTranslation } from 'react-i18next';
+import MyInput from '../addinput/MyInput';
 
-const EditName = ({visible, setVisible}) => {
+const EditName = ({visible, setVisible, change }) => {
     const { t } = useTranslation();
+    const [changeName, setChengeName] = useState(JSON.parse(localStorage.getItem('value')) || [] );
+
+    const handleChange = (e) => {
+        setVisible(false)
+        e.preventDefault();
+        change(changeName, localStorage.setItem('value', JSON.stringify(changeName)))
+        setChengeName({
+            nameChange: ''
+        })
+        
+    }
 
     const rootClasses = [cl.editContiner]
     if(visible) {
@@ -19,8 +31,12 @@ const EditName = ({visible, setVisible}) => {
                 </div>
                 <hr />
                 <div className={cl.btnSection}>
-                    <input type="text" placeholder='Full name/ Company name*'/>
-                    <button onClick={() => setVisible(false)}>{t("modalWindow.editnmae.button")}</button>
+                    <MyInput 
+                        placeholder='Full name/ Company name*'
+                        value={changeName.nameChange}
+                        onChange={(e) => setChengeName({...changeName, nameChange: e.target.value})}
+                    />
+                    <button onClick={handleChange}>{t("modalWindow.editnmae.button")}</button>
                 </div>
             </div>
         </div>

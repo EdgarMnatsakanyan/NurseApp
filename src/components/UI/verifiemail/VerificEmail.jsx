@@ -36,12 +36,46 @@ const VerificEmail = ({visible, setVisible, onChange}) => {
                     <EmailIcon />
                 <p>{t("modalWindow.verificemail.placeverifi")}</p>
                 <form action="" className={cl.inputs}>
-                    <input className={cl.VeraficInput} placeholder='-' value={values[0] || ''} onChange={({ nativeEvent }) => handleChange(0, nativeEvent.data)} type='text' maxLength={1}/>
-                    <input className={cl.VeraficInput} placeholder='-' value={values[1] || ''} onChange={({ nativeEvent }) => handleChange(1, nativeEvent.data)} type='text' maxLength={1}/>
-                    <input className={cl.VeraficInput} placeholder='-' value={values[2] || ''} onChange={({ nativeEvent }) => handleChange(2, nativeEvent.data)} type='text' maxLength={1}/>
-                    <input className={cl.VeraficInput} placeholder='-' value={values[3] || ''} onChange={({ nativeEvent }) => handleChange(3, nativeEvent.data)} type='text' maxLength={1}/>
+                    <input className={cl.VeraficInput} 
+                        placeholder='-' 
+                        value={values[0] || ''} 
+                        onChange={
+                            ({ nativeEvent }) => handleChange(0, nativeEvent.data)
+                        } type='text' 
+                        maxLength={1}
+                        />
+                    <input className={cl.VeraficInput} 
+                        placeholder='-' 
+                        type='text' 
+                        value={values[1] || ''} 
+                        onChange={
+                            ({ nativeEvent }) => handleChange(1, nativeEvent.data)
+                        } 
+                        maxLength={1}
+                    />
+
+                    <input className={cl.VeraficInput} 
+                        placeholder='-' 
+                        type='text' 
+                        value={values[2] || ''} 
+                        onChange={
+                            ({ nativeEvent }) => handleChange(2, nativeEvent.data)
+                        } 
+                        maxLength={1}
+                    />
+
+                    <input className={cl.VeraficInput} 
+                        placeholder='-' 
+                        type='text' 
+                        value={values[3] || ''} 
+                        onChange={
+                            ({ nativeEvent }) => handleChange(3, nativeEvent.data)
+                        } 
+                        maxLength={1}
+                    />
+
                 </form>
-                <button className={cl.verificBtn}>{t("modalWindow.verificemail.button")}</button>
+                <button className={cl.verificBtn} onClick={() => setVisible(false)}>{t("modalWindow.verificemail.button")}</button>
                 <a href="">{t("modalWindow.verificemail.resend")}</a>
                 </div>
             </div>

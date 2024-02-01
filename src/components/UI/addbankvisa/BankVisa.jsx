@@ -3,6 +3,7 @@ import cl from './BankVisa.module.css'
 import { PiBankBold } from 'react-icons/pi';
 import { HiDotsVertical } from 'react-icons/hi';
 import { useTranslation } from 'react-i18next';
+
 const BankVisa = ({data}) => {
     const { t } = useTranslation();
     const [isOpenThree, setIsOpenThree] = useState(false);

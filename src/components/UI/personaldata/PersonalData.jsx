@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import cl from './PersonalData.module.css';
 import EditName from '../editname/EditName';
 import CountryAddress from '../countryaddress/CountryAddress'
@@ -15,7 +15,7 @@ import { ReactComponent as Email } from '../../../assets/personaldata/email.svg'
 import { ReactComponent as Phone } from '../../../assets/personaldata/phone.svg';
 import { ReactComponent as Language } from '../../../assets/personaldata/language.svg';
 
-const PersonalData = ({visible, setVisible}) => {
+const PersonalData = () => {
     const { t } = useTranslation();
 
     const [modal, setModal] = useState(false);
@@ -25,6 +25,27 @@ const PersonalData = ({visible, setVisible}) => {
     const [language, setLanguage] = useState(false);
     const [showVerification, setShowVerification] = useState(false);
     const [showPhone, setShowPhone] = useState(false);
+    
+    const [changeName, setChengeName] = useState([])
+    const [changeStreet, setChangeStreet] = useState([])
+
+    const nameChangeing = (newName) => {
+        if (changeName == false){
+            setChengeName([...changeName, newName])
+        } else {
+            changeName[0] = newName
+        }
+    }
+
+    const streetChange = (newStreet) => {
+        if (changeStreet == false) {
+            setChangeStreet([...changeStreet, newStreet])
+        } else {
+            changeStreet[0] = newStreet
+        }
+    }
+
+
 
     return (
 
@@ -49,13 +70,15 @@ const PersonalData = ({visible, setVisible}) => {
                     </div>
                     <div className={cl.contentAbout}>
                         <p>{t("myProfile.personalData.name")}</p>
-                        <h4>Edgar Mnatsakanyan</h4>
+                    {changeName.map((data, index) => 
+                            <h4 key={index}>{data.nameChange}</h4>
+                    )}
                     </div>
                     <div className={cl.editor} onClick={() => setModal(true)}>
                         <EditPen className={cl.editpen}/>
                     </div>
                     <div className={cl.contentAll}>
-                    <EditName visible={modal} setVisible={setModal}/>
+                    <EditName change={nameChangeing} visible={modal} setVisible={setModal}/>
                     </div>
                 </div>
                 <div className={cl.content}>
@@ -64,13 +87,17 @@ const PersonalData = ({visible, setVisible}) => {
                     </div>
                     <div className={cl.contentAbout}>
                         <p>{t("myProfile.personalData.address")}</p>
-                        <h4>Tumanyan 23/45</h4>
+                        {changeStreet.map((value) => {
+                            return (
+                                <h4>{value.nameStreet} {value.address}</h4>
+                            )
+                        })}
                     </div>
                     <div className={cl.editor} onClick={() => setCountry(true)}>
                     <EditPen className={cl.editpen}/>
                     </div>
                     <div className={cl.contentAll}>
-                    <CountryAddress visible={country} setVisible={setCountry}/>
+                    <CountryAddress changeCity={streetChange} visible={country} setVisible={setCountry}/>
                     </div>
                 </div>
                 <div className={cl.content}>

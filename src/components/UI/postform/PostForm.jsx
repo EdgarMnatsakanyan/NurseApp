@@ -19,10 +19,11 @@ const PostForm = ({create}) => {
           ...post, id: Date.now()
         }
         create(newPost)
-        setPost({nameCard: '', 
-                numberCard: '',
-                dataCard: '' 
-                })
+        setPost({
+          nameCard: '', 
+          numberCard: '',
+          dataCard: '' 
+        })
     }
 
     return (

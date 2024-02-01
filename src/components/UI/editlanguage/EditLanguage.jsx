@@ -46,7 +46,7 @@ const EditLanguage = ({visible, setVisible}) => {
                         <EditInput />
                         <FaTrashCan className={cl.inputTrash}/>
                     </div>
-                    {count.map((data,index) => {
+                    {count.map((index) => {
                         return (
                             <div className={cl.sectionSelect} onChange={e => handleChange(e,index)}>
                                 <EditInput />

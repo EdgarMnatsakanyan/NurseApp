@@ -1,21 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import MyAvatar from './UI/avatargroup/MyAvatar'
 import NavBarSection from './UI/navbarsection/NavBarSection';
-import { ReactComponent as ProfileLogo } from '../assets/profilelogo.svg';
 
 const Profile = () =>  {
     
 
     return (
         <div className='navigation-container'>
-            <nav className='navigation'>
-                <div>
+            <div className='navigation'>
                   <h2 classname="nurse_title">Nurse app</h2>
-                </div>
                 <div className='profile-group'>
                   <MyAvatar />
                 </div>
-            </nav>
+            </div>
             <div className='background'></div>
             <NavBarSection />
         </div>

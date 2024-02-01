@@ -9,17 +9,15 @@ import PostSection from '../postsection/PostSection';
 import { ReactComponent as Method } from './NotFound.svg';
 import { useTranslation } from 'react-i18next';
 
-const PaymentMethod = ({visible, setVisible}) => {
+const PaymentMethod = () => {
     const [addCard, setAddCard] = useState(false);
     const [addBank, setAddBank] = useState(false);
     const [isShown, setIsShown] = useState(false);
     const [posts, setPosts] = useState([]);
-    const [count, setCount] = useState([]);
+    const [value, setValue] = useState([]);
     const { t } = useTranslation();
 
-    
-
-    const handleClick = event => {
+    const handleClick = () => {
         setIsShown(current => !current);
     }
 
@@ -28,29 +26,31 @@ const PaymentMethod = ({visible, setVisible}) => {
         setAddCard(true)
     }
 
-    const createCard = (newCard) => {
-        setPosts([...posts, newCard])
-        setAddBank(false)
-        setAddCard(false)
-    }
-
+    
     const handleCountAdd = () => {
         setAddBank(true)
         setAddCard(false)
     }
 
-    const createSecondCount = (newCount) => {
-        setCount([...count, newCount])
-        setAddBank(false)
-        setAddCard(false)
-    }
-
+    
     const handleSecondAdd = () => {
         setAddBank(true)
         setAddCard(false)
     }
 
-    console.log(count, 'count')
+    const createCard = (newCard) => {
+        setPosts([...posts, newCard])
+        setAddBank(false)
+        setAddCard(false)
+    }
+    
+    const createSecondCount = (newValue) => {
+        setValue([...value, newValue])
+        setAddBank(false)
+        setAddCard(false)
+    }
+
+
     return (
         <div className={cl.container}>
         {isShown ? (
@@ -58,13 +58,12 @@ const PaymentMethod = ({visible, setVisible}) => {
                 <p className={cl.sectionName}>{t("payment.title")}</p>
 
                 <div className={cl.cardContainer}>
-                    {posts.map((data,index) => {
-                            return (
-                        <div className={cl.sectionCard} >
-                            <VisaCard card={data} onCreate={({ number, name}) => {
-                            }} />
-                        </div>
-                            )
+                    {posts.map((data) => {
+                        return (
+                            <div className={cl.sectionCard} >
+                                <VisaCard card={data} />
+                            </div>
+                        )
                     })}
                     <AddCard visible={addCard} setVisible={setAddCard}>
                         <PostForm create={createCard} onClick={handleAdd}/>    
@@ -76,11 +75,10 @@ const PaymentMethod = ({visible, setVisible}) => {
                 <div>
                     <p className={cl.sectionName}>{t("payment.titletwo")}</p>
                     <div className={cl.cardContainer}>
-                    {count.map((data,index) => {
+                    {value.map((data) => {
                         return (
                             <div className={cl.sectionCard}>
-                                <BankVisa data={data} onCreate={({ data, name }) => {
-                            }} />
+                                <BankVisa data={data}/>
                             </div>
                         )
                     })}
