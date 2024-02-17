@@ -26,11 +26,15 @@ const PersonalData = () => {
     const [showVerification, setShowVerification] = useState(false);
     const [showPhone, setShowPhone] = useState(false);
     
-    const [changeName, setChengeName] = useState([])
+    const [changeName, setChengeName] = useState([])    
     const [changeStreet, setChangeStreet] = useState([])
+    const [changePhone, setChangePhone] = useState([])
+    const [isEmail, setIsEmail] = useState([])
+    const [isPhone, setIsPhone] = useState([])
+
 
     const nameChangeing = (newName) => {
-        if (changeName == false){
+        if (changeName === false){
             setChengeName([...changeName, newName])
         } else {
             changeName[0] = newName
@@ -38,13 +42,36 @@ const PersonalData = () => {
     }
 
     const streetChange = (newStreet) => {
-        if (changeStreet == false) {
+        if (changeStreet === false) {
             setChangeStreet([...changeStreet, newStreet])
         } else {
             changeStreet[0] = newStreet
         }
     }
 
+    const changeEmail = (newEmail) => {
+        if (isEmail === false) {
+            setIsEmail([...isEmail, newEmail])
+        } else {
+            isEmail[0] = newEmail
+        }
+    }
+
+    const changePhoneNumebr = (newPhoneNumber) => {
+        if (isPhone === false) {
+            setIsPhone([...isPhone, newPhoneNumber])
+        } else {
+            isPhone[0] = newPhoneNumber
+        }
+    }
+
+    const changePhoneValue = (newPhone) => {
+        if(changePhone === false) {
+            setChangePhone([...changePhone, newPhone])
+        } else {
+            changePhone[0] = newPhone
+        }
+    }
 
 
     return (
@@ -54,13 +81,14 @@ const PersonalData = () => {
             <div className={cl.sectionContainers}>
             <div className={cl.accoutn}>
                 <img src="./person.png" alt='123' className={cl.img}/>
-                <div>
-                <h4>Edgar Mnatsakanyan</h4>
-                <p>{t("myProfile.personalData.day")}</p>
+                <div className={cl.personalName}>
+                    <h4>Edgar Mnatsakanyan</h4>
+                    <p>{t("myProfile.personalData.day")}</p>
                 </div>
                 <button className={cl.changeBtn}>{t("myProfile.personalData.button")}</button>
             </div>
-            <hr className={cl.liner}/>
+            <div className={cl.line}/>
+
             <div className={cl.section}>
                 <a href="#">{t("myProfile.personalData.personal")}</a>
                 <div className={cl.personalSection}>
@@ -69,10 +97,13 @@ const PersonalData = () => {
                         <Person />
                     </div>
                     <div className={cl.contentAbout}>
-                        <p>{t("myProfile.personalData.name")}</p>
-                    {changeName.map((data, index) => 
-                            <h4 key={index}>{data.nameChange}</h4>
-                    )}
+                    <p>{t("myProfile.personalData.name")}</p>
+                    
+                    {changeName.map((data) => {
+                        return (
+                            <h4>{data.nameChange}</h4>
+                        )
+                    })}
                     </div>
                     <div className={cl.editor} onClick={() => setModal(true)}>
                         <EditPen className={cl.editpen}/>
@@ -87,9 +118,9 @@ const PersonalData = () => {
                     </div>
                     <div className={cl.contentAbout}>
                         <p>{t("myProfile.personalData.address")}</p>
-                        {changeStreet.map((value) => {
+                        {changeStreet.map((type) => {
                             return (
-                                <h4>{value.nameStreet} {value.address}</h4>
+                                <h4>{type.nameStreet} {type.address}</h4>
                             )
                         })}
                     </div>
@@ -106,7 +137,9 @@ const PersonalData = () => {
                     </div>
                     <div className={cl.contentAbout}>
                         <p>{t("myProfile.personalData.email")}</p>
-                        <h4>Mnacakanyan_2016@inbox.ru</h4>
+                        {isEmail.map((type) => 
+                                <h4>{type.email}</h4>
+                        )}
                     </div>
                     <div className={cl.editor} onClick={() => setEmail(true)}>
                     <EditPen className={cl.editpen}/>
@@ -118,7 +151,7 @@ const PersonalData = () => {
                         setEmail(false);
                     }} />
                     ) : (
-                    <EmailAddress visible={email} setVisible={setEmail} onSubmitEmail={() => {
+                    <EmailAddress changeEmail={changeEmail} visible={email} setVisible={setEmail} onSubmitEmail={() => {
                         setShowVerification(true);
                     }}/>
                     )}
@@ -130,7 +163,9 @@ const PersonalData = () => {
                     </div>
                     <div className={cl.contentAbout}>
                         <p>{t("myProfile.personalData.phone")}</p>
-                        <h4>+37494094585</h4>
+                        {changePhone.map((type) => 
+                            <h4>{type.phone}</h4>
+                        )}
                     </div>
                     <div className={cl.editor} onClick={() => setPhone(true)}>
                     <EditPen className={cl.editpen}/>
@@ -142,10 +177,10 @@ const PersonalData = () => {
                             setPhone(false);
                         }}/>
                         ) : (
-                            <PhoneEdit visible={phone} setVisible={setPhone} onSubmitPhone={() => {
-                                setShowPhone(true)
-                            }} />
-                        )}
+                        <PhoneEdit visible={phone} chnagePhone={changePhoneNumebr} setVisible={setPhone} onSubmitPhone={() => {
+                            setShowPhone(true)
+                        }} isChangePhone={changePhoneValue} />
+                    )}
                     </div>
                 </div>
                 <div className={cl.content}>

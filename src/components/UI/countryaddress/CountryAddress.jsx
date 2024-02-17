@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import cl from './CountryAddress.module.css';
 import { RxCross2 } from 'react-icons/rx';
 import { useTranslation } from 'react-i18next';
 import { FaAngleDown , FaAngleUp, FaRegCheckCircle  } from "react-icons/fa";
-
 import MyInput from '../addinput/MyInput';
+
 
 const CountryAddress = ({visible, setVisible, changeCity}) => {
     const { t } = useTranslation();
@@ -12,9 +12,9 @@ const CountryAddress = ({visible, setVisible, changeCity}) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [changeStreet, setChangeStreet] = useState([])
     const [selected, setIsSelected] = useState("Country*");
-    function handleBlur(e) {
-      console.log(e);
-    }
+    const [value, setValue] = useState('')
+
+
     const handleChange = (e) => {
         setVisible(false)
         e.preventDefault();
@@ -27,10 +27,12 @@ const CountryAddress = ({visible, setVisible, changeCity}) => {
 
     const toggleMenu =() => {
         setIsMenuOpen(!isMenuOpen);
+        <FaRegCheckCircle color='green'/>
     };
     
 
     const [postal, setPostal] = useState('');
+
     const rootClasses = [cl.countryContainer]
     if(visible) {
         rootClasses.push(cl.active)
@@ -55,8 +57,11 @@ const CountryAddress = ({visible, setVisible, changeCity}) => {
                         className={cl.zip} 
                         placeholder='15/20' 
                         pattern='[0-9]*' 
-                        value={changeStreet.address} 
-                        onChange={(e) => setChangeStreet({...changeStreet, address: e.target.value})}
+                        value={changeStreet.address && value} 
+                        onChange={(e) => {
+                            setChangeStreet({...changeStreet, address: e.target.value})
+                            setValue(e.target.value);
+                        }}
                         maxLength={5}
                         />
                     </div>
@@ -64,7 +69,7 @@ const CountryAddress = ({visible, setVisible, changeCity}) => {
                     <input type="text" placeholder='City*'/>
                     <input type="text" placeholder='State*'/>
                     <input type="text" placeholder='Postal code*'  pattern='[0-9]*' value={postal} onChange={(e) => setPostal((v) => (e.target.validity.valid ? e.target.value : v))} maxLength={4}/>
-                    <div className={cl.selectSection} onClick={(e) => setIsMenuOpen(!isMenuOpen)}> 
+                    <div className={cl.selectSection} onClick={() => setIsMenuOpen(!isMenuOpen)}> 
                         <p>{selected}</p>
                         <span onClick={toggleMenu}>
                             {isMenuOpen ? <FaAngleUp  /> : <FaAngleDown  />}

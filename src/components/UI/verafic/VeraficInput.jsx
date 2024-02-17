@@ -16,7 +16,14 @@ const VeraficInput = ({ onChange }) => {
 
     return (
         <div className={cl.veraficContainer}>
-            <input className={cl.VeraficInput} placeholder='-' value={values[0] || ''} onChange={({ nativeEvent }) => handleChange(0, nativeEvent.data)} type='text' maxLength={1}/>
+            <input 
+                className={cl.VeraficInput} 
+                placeholder='-' 
+                value={values[0] || ''} 
+                onChange={({ nativeEvent }) => handleChange(0, nativeEvent.data)} 
+                type='text' 
+                maxLength={1}
+            />
             <input className={cl.VeraficInput} placeholder='-' value={values[1] || ''} onChange={({ nativeEvent }) => handleChange(1, nativeEvent.data)} type='text' maxLength={1}/>
             <input className={cl.VeraficInput} placeholder='-' value={values[2] || ''} onChange={({ nativeEvent }) => handleChange(2, nativeEvent.data)} type='text' maxLength={1}/>
             <input className={cl.VeraficInput} placeholder='-' value={values[3] || ''} onChange={({ nativeEvent }) => handleChange(3, nativeEvent.data)} type='text' maxLength={1}/>

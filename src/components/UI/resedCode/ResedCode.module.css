@@ -1,0 +1,17 @@
+.btnResed {
+    width: 60px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    color: #7956D8;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.timeSection {
+    width: 60px;
+    height: 16px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #7956D8;
+}

@@ -21,8 +21,8 @@ const MyAvatar = () => {
             <VscAccount className={cl.icon}/>
             </div>
             <div className={cl.nameJoin}>
-            <h4>Edgar Mnatsakanyan</h4>
-            <p>{t("myProfile.navMenu.day")}</p>
+                <h4>Edgar Mnatsakanyan</h4>
+                <p>{t("myProfile.navMenu.day")}</p>
             </div>
             <FaChevronDown />
         </button>

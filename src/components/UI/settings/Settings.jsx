@@ -1,9 +1,11 @@
-import React,{ useState } from 'react';
+import React,{ useEffect, useState } from 'react';
 import cl from './Settings.module.css';
 import { FaEyeSlash, FaEye } from 'react-icons/fa6'
 import DeactivateAccount from '../deactivateaccount/DeactivateAccount';
 import { useTranslation } from 'react-i18next';
-const Settings = ({visible, setVisible}) => {
+import { FaRegCheckCircle } from "react-icons/fa";
+
+const Settings = () => {
     const { t } = useTranslation();
     const [modal, setModal] = useState(false)
     const [showPassword, setShowPassword] = useState(false);
@@ -15,6 +17,9 @@ const Settings = ({visible, setVisible}) => {
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
+    const toggleVisibility = () => {
+        setSeePassword(!seePassword);
+    };
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
     };
@@ -23,17 +28,14 @@ const Settings = ({visible, setVisible}) => {
       };
 
     const handleSubmit = (event) => {
-        event.preventDefault();
-        if (password !== confirmPassword) {
-            alert(`Password confired: ${confirmPassword}`);
-        } else {
-            setPasswordMatch(false);
-        }
-      };
-
-    const toggleVisibility = () => {
-        setSeePassword(!seePassword);
+    event.preventDefault();
+    if (password !== confirmPassword) {
+        alert(`Password confired: ${confirmPassword}`);
+    } else {
+        setPasswordMatch(false);
+    }
     };
+
   
   return (
         <div className={cl.allContainer}>
@@ -61,7 +63,8 @@ const Settings = ({visible, setVisible}) => {
                     </div>
                     <button className={cl.btnChange} onClick={handleSubmit}>{t("setting.buttonchange")}</button>
             </div>
-            <hr />
+            <div className={cl.line}/>
+        
             <div>
                 {!passwordMatch && <p style={{color: 'red', alignItems: 'center', display: 'flex', gap: 8}}> {t("setting.errormessage")}</p>}
                 <button className={cl.btnDeactivate} onClick={() => setModal(true)}>{t("setting.buttondeactive")}</button>

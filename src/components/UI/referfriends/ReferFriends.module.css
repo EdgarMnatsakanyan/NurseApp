@@ -5,6 +5,7 @@
     border-radius: 10px;
     background-color: #fff;
     width: 1100px;
+    height: 420px;
     min-height: 320px;
     padding: 15px;
 }
@@ -44,12 +45,18 @@
 
 /* ----------------------------- */
 
+.line {
+    width: 1070px;
+    height: 1px;
+    border: 1px solid #F4F3F7;    
+}
+
 .contentSecion {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 20px;
     gap: 25px;
 }
 

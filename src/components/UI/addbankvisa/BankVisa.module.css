@@ -99,7 +99,10 @@
     border-radius: 20px;
 }
 
-.visaa {
+.visa {
     position: relative;
-    top: 5px;
+    top: 2px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #A29DB0;
 }

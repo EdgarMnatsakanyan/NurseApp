@@ -9,7 +9,6 @@ const VerificationPassword = () => {
     const { t } = useTranslation();
     
     const [code, setCode] = useState('');
-    console.log('code', code);
 
     const btnDisabled = code.length !== 4;
 

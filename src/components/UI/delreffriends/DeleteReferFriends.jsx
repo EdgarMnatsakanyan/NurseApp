@@ -33,7 +33,7 @@ const DeleteReferFriends = ({visible, setVisible}) => {
                     <h4>Refer a friend and get the bonus</h4>
                     <p>Text should be here</p>
                     <div className={cl.btnSection}>
-                        <button type="submit" className={cl.btnCancel}>No, cancel</button>
+                        <button type="submit" className={cl.btnCancel} onClick={() => setShowComponentInvite(true)}>No, cancel</button>
                         <button type="submit" className={cl.btnDelete} onClick={() => setShowComponentInvite(true)}>Yes, delete</button>
                     </div>
                 </div>

@@ -16,16 +16,16 @@ import { ReactComponent as AppStore } from '../assets/appstore.svg';
                   <a class="playstore-button" href="#">
                   <GooglePlay />
                     <span class="texts">
-                      <span class="text-1">Download on the</span>
-                      <span class="text-2">Google Play</span>
+                      <span class="text-one">Download on the</span>
+                      <span class="text-two">App Store</span>
                     </span>
                   </a>
 
                   <a class="playstore-button" href="#">
                     <AppStore />
                     <span class="texts">
-                      <span class="text-1">GET IT ON</span>
-                      <span class="text-2">Google Play</span>
+                      <span class="text-one">GET IT ON</span>
+                      <span class="text-two">Google Play</span>
                     </span>
                   </a>
                   </div>

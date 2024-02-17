@@ -6,11 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 const PostSection = ({ create }) => {
     const { t } = useTranslation();
-    const [value, setValue] = useState({
-        name: '',
-        email: '',
-        iban: ''
-    })
+    const [value, setValue] = useState([])
 
     const addPost = (el) => {
         el.preventDefault()
@@ -20,7 +16,7 @@ const PostSection = ({ create }) => {
         
         create(newValue)
         setValue({
-            name: '',
+            number: '',
             email: '',
             iban: '' 
         })
@@ -30,8 +26,8 @@ const PostSection = ({ create }) => {
         <>
             <div className={cl.container}>
                 <MyInput 
-                value={value.name}
-                onChange={el => setValue({...value, name: el.target.value})}
+                value={value.number}
+                onChange={el => setValue({...value, number: el.target.value})}
                 placeholder='Account holder name *'
                 />
                 <MyInput 

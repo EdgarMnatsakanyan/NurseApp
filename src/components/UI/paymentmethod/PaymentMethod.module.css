@@ -4,7 +4,7 @@
     left: 360px;
     display: flex;
     max-width: 1120px;
-    height: 440px;
+    height: 420px;
     border-radius: 10px;
     background-color: #fff;
     flex-direction: column;
@@ -38,6 +38,12 @@
     
 }
 
+.line {
+    width: 1070px;
+    height: 1px;
+    border: 1px solid #F4F3F7;    
+}
+
 .addCardBtn {
     background-color: #fff;
     border: 1px solid #7956D8;
@@ -61,7 +67,7 @@
 .sectionCardContainer {
     padding: 10px;
     width: 1100px;
-    height: 410px;
+    height: 380px;
 }
 
 .cardContainer .title h6 {

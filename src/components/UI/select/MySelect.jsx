@@ -6,7 +6,7 @@ const MySelect = ({ onLanguageChange }) => {
         <select className={cl.mySelect} onChange={({ target }) => {
             onLanguageChange && onLanguageChange(target.value)
         }}>
-            <option>EN</option>
+            <option value='en'>EN</option>
             <option>RU</option>
         </select>
     );

@@ -6,6 +6,7 @@
     left: 0;
     display: flex;
     background: rgba(0, 0, 0, 0.7);
+    z-index: 5;
 }
 
 .verificEmail.active {

@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+}
+
+.sections {
+    width: 100%;
+    border-bottom: 1px solid #F4F3F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    height: 70px;
+    position: relative;
+}
+
+.containerIcons {
+    background-color: #F4F3F7;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.icons {
+    color: #7956D8;
+    font-size: 20px;
+}
+
+.sections p {
+    font-size: 13px;
+    color: #A29DB0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 6px;
+    left: 70px;
+}
+
+.iconTitle {
+    display: flex;
+    gap: 20px;
+}
+
+.editIcon {
+    cursor: pointer;
+}
+
+.title {
+    position: absolute;
+    top: 35px;
+    left: 70px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}

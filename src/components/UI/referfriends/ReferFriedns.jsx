@@ -36,7 +36,7 @@ const ReferFriedns = () => {
                     <p className={cl.infoRefer}>{t("referfriend.titleone")}</p>
                     <p className={cl.referAbout}>{t("referfriend.titletwo")}</p>
                 </div>
-            <hr />
+            <div className={cl.line}/>
                 <div className={cl.contentSecion}>
                     <div className={cl.largeContainer}>
                         <div className={cl.sections}>

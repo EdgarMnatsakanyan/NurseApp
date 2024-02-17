@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import cl from './MyInput.module.css';
-import countriesData from './index.json'
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import countriesData from './index.json'
 
 const PhoneNumberInput = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -30,11 +30,10 @@ const PhoneNumberInput = () => {
       navigate('/verification')
     }
 
-
   return (
     <div className={cl.inputContaner}>
       <div className={cl.inputSection}>
-        <select value={selectedCountry.name} className={cl.mySelect} onChange={handleCountryChange}>
+      <select value={selectedCountry.name} className={cl.mySelect} onChange={handleCountryChange}>
           {countriesData.map((country) => (
             <option key={country.name} value={country.name}>
               <div>
@@ -52,6 +51,7 @@ const PhoneNumberInput = () => {
           onChange={handleChange}
           placeholder="37494101010"
         />
+
       </div>
       <button className={cl.button} onClick={handleContinue}>{t("signupor.btnone")}</button>
     </div>

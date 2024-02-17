@@ -23,6 +23,16 @@
     padding-top: 8px;
 }
 
+.nameJoin h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.nameJoin p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
 .avatarGroup p {
     color: var(--n-5, #A29DB0);
     font-family: Aeonik;

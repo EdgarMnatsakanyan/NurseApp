@@ -25,8 +25,8 @@ const BankVisa = ({data}) => {
                     </div>
                     <div className={cl.visaCard} >
                         <div className={cl.visaOn}>
-                        <p className={cl.visaa}>{data.name}</p>
-                        <p className={cl.iban}>{data.iban}</p>
+                        <p className={cl.visa}>Account Number</p>
+                        <p className={cl.iban}>{data.number}</p>
                         </div>
                         <HiDotsVertical className={cl.dot} onClick={toggleThreeDot}/>
                         {isOpenThree && (

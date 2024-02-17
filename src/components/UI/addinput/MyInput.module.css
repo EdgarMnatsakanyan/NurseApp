@@ -1,7 +1,5 @@
 .cardInput {
     display: flex;
-}
-
-.cardInput {
     margin: 18px 0;
+    padding-right: 45px;
 }

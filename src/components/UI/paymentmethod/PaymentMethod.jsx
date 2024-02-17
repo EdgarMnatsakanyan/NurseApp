@@ -27,9 +27,10 @@ const PaymentMethod = () => {
     }
 
     
-    const handleCountAdd = () => {
+    const handleValueAdd = () => {
         setAddBank(true)
         setAddCard(false)
+        
     }
 
     
@@ -39,13 +40,13 @@ const PaymentMethod = () => {
     }
 
     const createCard = (newCard) => {
-        setPosts([...posts, newCard])
+        setPosts([...posts, newCard], posts.length > 0)
         setAddBank(false)
         setAddCard(false)
     }
     
     const createSecondCount = (newValue) => {
-        setValue([...value, newValue])
+        setValue([...value, newValue], value.length > 0)
         setAddBank(false)
         setAddCard(false)
     }
@@ -56,38 +57,38 @@ const PaymentMethod = () => {
         {isShown ? (
             <div className={cl.sectionContainer}>
                 <p className={cl.sectionName}>{t("payment.title")}</p>
-
-                <div className={cl.cardContainer}>
-                    {posts.map((data) => {
-                        return (
-                            <div className={cl.sectionCard} >
-                                <VisaCard card={data} />
-                            </div>
-                        )
-                    })}
-                    <AddCard visible={addCard} setVisible={setAddCard}>
-                        <PostForm create={createCard} onClick={handleAdd}/>    
-                    </AddCard>
-                </div>
-
+                    <div className={cl.cardContainer}>
+                        {posts.map((data) => {
+                            return (
+                                <div className={cl.sectionCard} >
+                                    <VisaCard card={data} />
+                                </div>
+                            )
+                        })}
+                        <AddCard visible={addCard} setVisible={setAddCard}>
+                            <PostForm create={createCard} onClick={handleAdd}/>    
+                        </AddCard>
+                    </div>
                 <button className={cl.addCardBtn} onClickCapture={handleAdd} onClick={() => setAddCard(true)}>+ {t("payment.buttonone")}</button>
-                <hr />
+                <div className={cl.line}/>
                 <div>
                     <p className={cl.sectionName}>{t("payment.titletwo")}</p>
+
                     <div className={cl.cardContainer}>
-                    {value.map((data) => {
-                        return (
-                            <div className={cl.sectionCard}>
-                                <BankVisa data={data}/>
-                            </div>
-                        )
-                    })}
-                    <AddBank visible={addBank} setVisible={setAddBank}>
-                        <PostSection create={createSecondCount} onClick={handleCountAdd}/>
-                    </AddBank>
+                        {value.map((data) => {
+                            return (
+                                <div className={cl.sectionCard}>
+                                    <BankVisa data={data}/>
+                                </div>
+                            )
+                        })}
+                            <AddBank visible={addBank} setVisible={setAddBank}>
+                                <PostSection create={createSecondCount} onClick={handleValueAdd}/>
+                            </AddBank>
+                    </div>
+
                 </div>
-                </div>
-                <button className={cl.addCardBtn} onClickCapture={handleSecondAdd} onClick={() => setAddBank(true)}>+ {t("payment.buttonthree")}</button>
+                    <button className={cl.addCardBtn} onClickCapture={handleSecondAdd} onClick={() => setAddBank(true)}>+ {t("payment.buttonthree")}</button>
             </div>
         ) : (
             <div className={cl.cardContainer}>

@@ -6,22 +6,22 @@ import MyInput from '../addinput/MyInput';
 
 const EditName = ({visible, setVisible, change }) => {
     const { t } = useTranslation();
-    const [changeName, setChengeName] = useState(JSON.parse(localStorage.getItem('value')) || [] );
+    const [changeName, setChengeName] = useState([]);
 
     const handleChange = (e) => {
-        setVisible(false)
         e.preventDefault();
-        change(changeName, localStorage.setItem('value', JSON.stringify(changeName)))
+        setVisible(!visible)
+        change(changeName)
         setChengeName({
             nameChange: ''
         })
-        
     }
 
     const rootClasses = [cl.editContiner]
     if(visible) {
         rootClasses.push(cl.active)
     }
+    
     return (
         <div className={rootClasses.join(' ')}>
             <div className={cl.editSection}>
@@ -37,6 +37,7 @@ const EditName = ({visible, setVisible, change }) => {
                         onChange={(e) => setChengeName({...changeName, nameChange: e.target.value})}
                     />
                     <button onClick={handleChange}>{t("modalWindow.editnmae.button")}</button>
+
                 </div>
             </div>
         </div>

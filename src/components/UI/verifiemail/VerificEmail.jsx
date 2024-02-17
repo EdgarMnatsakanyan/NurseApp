@@ -6,13 +6,15 @@ import { ReactComponent as EmailIcon } from '../../..//assets/email.svg';
 
 const VerificEmail = ({visible, setVisible, onChange}) => {
     const { t } = useTranslation();
-
     const [values, setValues] = useState([]);
+
 
     const verificEmail = [cl.verificEmail]
     if(visible) {
         verificEmail.push(cl.active)
     }
+
+
 
     const handleChange = (index, value) => {
         const number = (value || '').replace(/\D+/g, '');

@@ -1,0 +1,183 @@
+.container {
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -15px;
+}
+
+.image {
+    width: 110px;
+    height: 70px;
+    background-size: contain;
+}
+
+.containerIconTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerIconTitle h4 {
+    color: #7956D8;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerIconTitle p {
+    width: 330px;
+    color: #A29DB0;
+    font-size: 16px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+
+.sectionAboutDiscount {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0.3px 0px 8px 0.2px #0000001A;
+    border-radius: 10px;
+    position: relative;
+}
+
+.section {
+    width: 150px;
+    height: 100px;
+    list-style-type: none;
+    border-bottom-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sectionRight {
+    width: 150px;
+    height: 100px;
+    list-style-type: none;
+    border-bottom-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 2px dashed #9F81E6;
+}
+
+.sectionRight h3 {
+    font-size: 20px;
+    color: #7956D8;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.sectionRight h3 span {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.sectionRight h5 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.sectionRight p { 
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #A29DB0;
+    margin: 0;
+}
+
+.section h3 {
+    font-size: 20px;
+    color: #7956D8;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.section h3 span {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.section h5 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.section p { 
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #A29DB0;
+    margin: 0;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border: 1px dashed #9F81E6;
+}
+
+.aboutDiscount {
+    position: absolute;
+    background-color: #fff;
+    top: 55px;
+    left: 50px;
+    width: 100px;
+    height: 75px;
+    box-shadow: 0px 0px 8px 0.8px #0000001A;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.aboutDiscount p {
+    font-size: 16px;
+    margin: 0px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7956D8;
+    font-weight: 600;
+}
+
+.aboutOverDiscount {
+    position: absolute;
+    background-color: #fff;
+    top: 55px;
+    right: -15px;
+    width: 100px;
+    height: 75px;
+    box-shadow: 0px 0px 8px 0.8px #0000001A;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.aboutOverDiscount p {
+    font-size: 16px;
+    margin: 0px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7956D8;
+    font-weight: 600;
+}

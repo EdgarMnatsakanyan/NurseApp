@@ -14,11 +14,11 @@ import HelpAndSupport from '../helpandsupport/HelpAndSupport';
 
 const NavBarSection = () => {
     const { t } = useTranslation();
-    const sections = [cl.sections]
-    const active = [cl.active]
-    const content = [cl.content]
-    const activeContent = [cl.activeContent]
-    const [toggleState, setToggleState] = useState(1)
+    const sections = [cl.sections];
+    const active = [cl.active];
+    const content = [cl.content];
+    const activeContent = [cl.activeContent];
+    const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {
         setToggleState(index)

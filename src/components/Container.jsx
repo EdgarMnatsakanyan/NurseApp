@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MyInput from './UI/input/MyInput.jsx';
 import { useTranslation } from 'react-i18next';
 import ImgContainer from './ImgContainer.jsx';

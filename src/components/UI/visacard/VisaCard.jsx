@@ -24,7 +24,7 @@ const VisaCard = ({onCreate, card}) => {
                 </div>
                 <div className={cl.visaCard}>
                     <div className={cl.visaIn}>
-                    <p className={cl.visa}>{card.nameCard}</p>
+                    <p className={cl.visa}>Visa Card</p>
                     <p>{card.numberCard} <span>{card.dataCard}</span></p>
                     </div>
                     <HiDotsVertical className={cl.dot} onClick={toggleOneDot}/>

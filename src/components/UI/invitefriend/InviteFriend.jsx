@@ -4,7 +4,7 @@ import { FaArrowLeftLong } from 'react-icons/fa6';
 import { ReactComponent as Gif } from './Gifts.svg';
 import SeeFriends from '../seefriends/SeeFriends';
 import { useTranslation } from 'react-i18next';
-const InviteFriend = ({onPressBack, onPressInvite}) => {
+const InviteFriend = ({onPressBack}) => {
     const { t } = useTranslation();
     const [showList, setShowList] = useState(false);
 

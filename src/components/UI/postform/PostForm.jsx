@@ -7,12 +7,9 @@ import { useTranslation } from 'react-i18next';
 
 const PostForm = ({create}) => {
     const { t } = useTranslation();
-    const [post, setPost] = useState({
-        nameCard: '',
-        numberCard: '',
-        dataCard: '' 
-    })
+    const [post, setPost] = useState([]);
 
+  
     const addNewPost = (e) => {
         e.preventDefault()
         const newPost = {
@@ -20,7 +17,6 @@ const PostForm = ({create}) => {
         }
         create(newPost)
         setPost({
-          nameCard: '', 
           numberCard: '',
           dataCard: '' 
         })
@@ -30,15 +26,13 @@ const PostForm = ({create}) => {
         <form>
           <div className={cl.cardSectionInput}>
           <MyInput 
-            value={post.nameCard}
-            onChange={e => setPost({...post, nameCard: e.target.value})}
+            value={post.numberCard}
+            onChange={e => setPost({...post, numberCard: e.target.value})}
             placeholder='Card number *'
           />
           <FaRegCreditCard className={cl.icon}/>
           </div>
           <MyInput
-            value={post.numberCard}
-            onChange={e => setPost({...post, numberCard: e.target.value})}
             placeholder='Full name'
           />
           <MyInput

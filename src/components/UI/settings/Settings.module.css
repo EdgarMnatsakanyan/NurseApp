@@ -5,7 +5,7 @@
     border-radius: 10px;
     background-color: #fff;
     width: 1100px;
-    min-height: 440px;
+    height: 420px;
     padding: 15px;
 }
 
@@ -24,6 +24,12 @@
     align-items: center;
     gap: 25px;
     padding-bottom: 15px;
+}
+
+.line {
+    width: 1070px;
+    height: 1px;
+    border: 1px solid #F4F3F7;    
 }
 
 .firstInput {
@@ -72,4 +78,26 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.notification {
+    position: absolute;
+    top: 10px;
+    left: 350px;
+    display: flex;
+    gap: 8px;
+    background-color: #fff;
+    padding: 1px 20px;
+    border-radius: 10px;
+}
+
+.notificationIcon {
+    font-size: 18px;
+    color: #23C983;
+}
+
+.notificationTitle {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
 }
