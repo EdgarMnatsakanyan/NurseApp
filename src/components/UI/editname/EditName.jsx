@@ -1,21 +1,10 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import cl from './EditName.module.css'
 import { RxCross2 } from 'react-icons/rx'
 import { useTranslation } from 'react-i18next';
-import MyInput from '../addinput/MyInput';
 
-const EditName = ({visible, setVisible, change }) => {
+const EditName = ({visible, setVisible}) => {
     const { t } = useTranslation();
-    const [changeName, setChengeName] = useState([]);
-
-    const handleChange = (e) => {
-        e.preventDefault();
-        setVisible(!visible)
-        change(changeName)
-        setChengeName({
-            nameChange: ''
-        })
-    }
 
     const data = useRef()
     const add = () => {
@@ -26,7 +15,6 @@ const EditName = ({visible, setVisible, change }) => {
     if(visible) {
         rootClasses.push(cl.active)
     }
-    
     return (
         <div className={rootClasses.join(' ')}>
             <div className={cl.editSection}>
@@ -37,6 +25,7 @@ const EditName = ({visible, setVisible, change }) => {
                 <hr />
                 <div className={cl.btnSection}>
                     <input type="text" placeholder='Full name/ Company name*'/>
+                    <button onClick={add}>{t("modalWindow.editnmae.button")}</button>
                     <button onClick={() => setVisible(false)}>{t("modalWindow.editnmae.button")}</button>
                 </div>
             </div>
