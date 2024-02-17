@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import cl from './EditName.module.css'
 import { RxCross2 } from 'react-icons/rx'
 import { useTranslation } from 'react-i18next';
@@ -17,6 +17,11 @@ const EditName = ({visible, setVisible, change }) => {
         })
     }
 
+    const data = useRef()
+    const add = () => {
+        console.log(data.current.value, 'initial value')
+        localStorage.setItem("inputValue", data.current.value)
+    }
     const rootClasses = [cl.editContiner]
     if(visible) {
         rootClasses.push(cl.active)
@@ -31,13 +36,8 @@ const EditName = ({visible, setVisible, change }) => {
                 </div>
                 <hr />
                 <div className={cl.btnSection}>
-                    <MyInput 
-                        placeholder='Full name/ Company name*'
-                        value={changeName.nameChange}
-                        onChange={(e) => setChengeName({...changeName, nameChange: e.target.value})}
-                    />
-                    <button onClick={handleChange}>{t("modalWindow.editnmae.button")}</button>
-
+                    <input type="text" placeholder='Full name/ Company name*'/>
+                    <button onClick={() => setVisible(false)}>{t("modalWindow.editnmae.button")}</button>
                 </div>
             </div>
         </div>
